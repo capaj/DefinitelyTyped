@@ -162,7 +162,7 @@ declare namespace request {
         send(data?: string | object): this;
         serialize(serializer: Serializer): this;
         set(field: object): this;
-        set(field: string, val: string): this;
+        set(field: string, val: string | string[]): this;
         set(field: 'Cookie', val: string[]): this;
         timeout(ms: number | { deadline?: number, response?: number }): this;
         trustLocalhost(enabled?: boolean): this;
